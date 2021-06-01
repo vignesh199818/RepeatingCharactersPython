@@ -1,0 +1,12 @@
+A = "Vignesh waran";
+print("Repeating characters: ");
+print(len(A));
+for i in range(0, len(A)):
+    f = 1;
+    for j in range(i + 1, len(A)):
+        if (A[i] == A[j] and A[i] != ' '):
+            f = f + 1;
+            A = A[:j] + '0' + A[j+1:];
+    if (f > 1 and A[i] != '0'):
+
+        print(A[i]);
